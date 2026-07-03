@@ -66,7 +66,7 @@ if __name__ == "__main__":
         else:
             # Translate the recognized text to Japanese
             target_language = "ja"  # Language code for Japanese
-            translated_text = GoogleTranslator(source='auto', target='ja').translate(prompt)
+            translated_text = GoogleTranslator(source='auto', target=target_language).translate(prompt)
             text_to_speech_japanese(translated_text)
 
             # Save the translated text to a text file
